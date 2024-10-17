@@ -91,6 +91,12 @@ func main() {
 
 			cnt[sz]--
 		}
+		for _, sz := range cnt {
+			if sz != 0 {
+				fmt.Println("Not equal")
+				return
+			}
+		}
 	}
 
 	fmt.Println("Equal")
